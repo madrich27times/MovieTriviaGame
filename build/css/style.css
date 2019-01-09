@@ -1,0 +1,159 @@
+body {
+  padding: 30px;
+  border-radius: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+#canvasWrapper {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+canvas { 
+  position: absolute; 
+  z-index: 1;
+  border-radius: 20px; 
+}
+
+#contentWrapper {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+#welcomeContainer {
+  margin: auto;
+  width: 70%;
+  padding: 70px;
+  text-align: center;
+  /* padding-bottom: 10px; */
+}
+
+#welcomeTxt {
+  letter-spacing: 3px;
+}
+
+.col {
+  margin-left: 500px;
+  padding: 20px;
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+#mainContainer {
+  display: none;
+  margin: auto;
+  width: 70%;
+  padding: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#gameContainer {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.quotes {
+  font-style: italic;
+}
+
+#startBtn:hover {
+  background-color: #fff;
+  color: #000;
+  opacity: .9;
+}
+
+.hintBtn {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  box-shadow:0 0 1px transparent;
+}
+
+ .hintBtn:active, .hintBtn:focus, .hintBtn:hover  {
+  -webkit-animation-name:hvr-push;
+  animation-name:hvr-push;
+  -webkit-animation-duration:.3s;
+  animation-duration:.3s;
+  -webkit-animation-timing-function:linear;
+  animation-timing-function:linear;
+  -webkit-animation-iteration-count:1;
+  animation-iteration-count:1
+}
+
+.hintImages {
+  height: 40%;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+#nextBtn, #doneBtn {
+  display: none;
+  margin: auto;
+}
+
+#quitBtn {
+  margin: auto;
+  margin-top: 10px;
+}
+
+#endGame {
+  display: none;  
+  margin: auto;
+  width: 70%;
+  padding: 70px;
+  text-align: center; 
+}
+
+#replayBtn:hover {
+  background-color: #fff;
+  color: #000;
+  opacity: .9;
+}
+
+.hvr-back-pulse-ed {
+  display:inline-block;
+  vertical-align:middle;
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  box-shadow:0 0 1px transparent;
+  overflow:hidden;
+  -webkit-transition-duration:
+  .5s;transition-duration:.5s;
+  -webkit-transition-property:color,background-color;
+  transition-property:color,background-color
+}
+
+  .hvr-back-pulse-ed:active, .hvr-back-pulse-ed:focus, .hvr-back-pulse-ed:hover {
+    -webkit-animation-name:hvr-back-pulse;
+    animation-name:hvr-back-pulse;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-delay:.5s;
+    animation-delay:.5s;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
+    /* background-color:#2098D1; */
+
+    background-color: #55b8b5; background-image: -webkit-gradient(linear, left top, left bottom, from(#55b8b5), to(#5a7cb6));
+    background-image: -webkit-linear-gradient(top, #55b8b5, #5a7cb6);
+    background-image: -moz-linear-gradient(top, #55b8b5, #5a7cb6);
+    background-image: -ms-linear-gradient(top, #55b8b5, #5a7cb6);
+    background-image: -o-linear-gradient(top, #55b8b5, #5a7cb6);
+    background-image: linear-gradient(to bottom, #55b8b5, #5a7cb6);
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#55b8b5, endColorstr=#5a7cb6);
+    color:#fff;
+  }

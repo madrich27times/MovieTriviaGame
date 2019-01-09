@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Movie Game</title>
+  <link href='css/style.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/scrollanim.min.css">
+  <link rel="stylesheet" href="css/kissui.css">
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/aos.css">    
+</head>
+
+<body>
+  <div id="canvasWrapper">
+    <canvas id="granim-canvas" width="800" height="600"></canvas>
+    <div id="contentWrapper">
+      
+      <div id="welcomeContainer">
+
+          <div data-kui-anim="fadeIn" class="col">
+            <h1 id="welcomeTxt">WELCOME</h1>
+            <h4>Ready to test your film knowledge?</h4>
+            <h6>Hit 'Begin' below</h6>
+            <button type="submit" id="startBtn" class="btn hvr-grow">Begin</button>
+          </div>
+
+      </div>
+
+      <div id="endGame">
+        <h1>Game Over!</h1>
+        <h3 id="scoreHeading"></h3>
+        <h3 id="skippedHeading"></h3>
+        <button type="submit" id="replayBtn" class="btn hvr-grow">Play Again</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="mainContainer">
+    <div id="gameContainer">
+      <h2 id="scoreId"></h2>
+      <h3 id="timer"></h3>
+    </div>
+    <button type="submit" id="nextBtn" class="btn hvr-back-pulse-ed">Next</button>
+    <button type="submit" id="doneBtn" class="btn hvr-back-pulse-ed">Done</button>
+    <button type="submit" id="quitBtn" class="btn hvr-back-pulse-ed">Quit</button>
+  </div>
+
+  <script src="main.bundle.js"></script>
+  <script src='scripts/scrollanim.js'></script>
+  <script src="scripts/granim.min.js"></script>
+  <script src="scripts/aos.js"></script>  
+  <script>
+    var granimInstance = new Granim({
+      element: '#granim-canvas',
+      name: 'granim',
+      opacity: [1, 1],
+      states: {
+        "default-state": {
+          gradients: [
+            ['#834D9B', '#D04ED6'],
+            ['#1CD8D2', '#93EDC7']
+          ]
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
